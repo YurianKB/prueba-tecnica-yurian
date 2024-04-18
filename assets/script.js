@@ -1,35 +1,35 @@
-// function getCharacters(done){
-//     const results = fetch ("https://rickandmortyapi.com/api/character");
+function getCharacters(done){
+    const results = fetch ("https://rickandmortyapi.com/api/character");
 
-//     results
-//     .then(response => response.json())
-//     .then(data => {
-//         done(data)
-//     });
-// }
+    results
+    .then(response => response.json())
+    .then(data => {
+        done(data)
+    });
+}
 
-// getCharacters(data => {
+getCharacters(data => {
 
-//     console.log(data);
+    console.log(data);
 
-//     data.results.forEach(personaje => {
+    // data.results.forEach(personaje => {
 
-//     const tr = document.createRange().createContextualFragment(`
-//             <tr>
-//                 <td>${personaje.name}</td>
-//                 <td>${personaje.gender}</td>
-//                 <td>${personaje.status}</td>
-//                 <td>${personaje.species}</td>
-//                 <td>${personaje.type}</td>
-//             </tr>
-//             `);
+    // const tr = document.createRange().createContextualFragment(`
+    //         <tr>
+    //             <td>${personaje.name}</td>
+    //             <td>${personaje.gender}</td>
+    //             <td>${personaje.status}</td>
+    //             <td>${personaje.species}</td>
+    //             <td>${personaje.type}</td>
+    //         </tr>
+    //         `);
 
-//             const tbody = document.querySelector(tbody);
+    //         const tbody = document.querySelector(tbody);
 
-//             MediaDeviceInfo.append(article);
-//     });     
+    //         MediaDeviceInfo.append(article);
+    // });     
     
-// });
+});
 
 function getUniqueValuesFromColumn() {
 
