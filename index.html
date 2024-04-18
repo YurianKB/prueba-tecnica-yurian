@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/style.css">
+      <title>Prueba Yurián</title>
+   </head>
+   <body class="main-container">
+      <div class="container-table">
+         <h1>Personajes</h1>
+         <div class="outer-wrapper table">
+            <div class="table-wrapper">
+               <table id="emp-table">
+                  <thead>
+                     <th col-index = 1>
+                        Nombre
+                     </th>
+                     <th col-index = 2>
+                        Género
+                        <select class="table-filter" onchange="filter_rows()">
+                           <option value="all"></option>
+                        </select>
+                     </th>
+                     <th col-index = 3>
+                        Status
+                        <select class="table-filter" onchange="filter_rows()">
+                           <option value="all"></option>
+                        </select>
+                     </th>
+                     <th col-index = 4>
+                        Especie
+                        <select class="table-filter" onchange="filter_rows()">
+                           <option value="all"></option>
+                        </select>
+                     </th>
+                     <th col-index = 5>
+                        Tipo
+                        <select class="table-filter" onchange="filter_rows()">
+                           <option value="all"></option>
+                        </select>
+                     </th>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Masculino</td>
+                        <td>Vivo</td>
+                        <td>Humano</td>
+                        <td>Rick malo</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Sin Género</td>
+                        <td>Muerto</td>
+                        <td>Monstruo</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Femenino</td>
+                        <td>Desconocido</td>
+                        <td>Alienígena</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Femenino</td>
+                        <td>Vivo</td>
+                        <td>Humano</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Femenino</td>
+                        <td>Vivo</td>
+                        <td>Humano</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Femenino</td>
+                        <td>Desconocido</td>
+                        <td>Monstruo</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Masculino</td>
+                        <td>Vivo</td>
+                        <td>Humano</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Masculino</td>
+                        <td>Vivo</td>
+                        <td>Humano</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Femenino</td>
+                        <td>Desconocido</td>
+                        <td>Monstruo</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Femenino</td>
+                        <td>Muerto</td>
+                        <td>Humano</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Masculino</td>
+                        <td>Vivo</td>
+                        <td>Humano</td>
+                        <td>Desconocido</td>
+                     </tr>
+                     <tr>
+                        <td>Rick Sanchez</td>
+                        <td>Masculino</td>
+                        <td>Vivo</td>
+                        <td>Humano</td>
+                        <td>Desconocido</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <script src="assets/script.js"></script>
+               <script>
+                  window.onload = () => {
+                      console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+                  };
+                  getUniqueValuesFromColumn()
+               </script>
+               
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
