@@ -93,5 +93,6 @@ table td {
     .container-table{
         width: 94%;
         padding: 15px;
+        border-radius: 15px;
     }
 }
